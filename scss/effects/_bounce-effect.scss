@@ -64,3 +64,69 @@ a.bounce-2 {
     -moz-animation: bounce-dowm  0.5s linear;
   }
 }
+
+a.bounce-3 {
+  color: $paper;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  @-moz-keyframes bounce-left  {
+    0%    { left: 0; animation-timing-function: ease-out; }
+    17%   { left: 15px; animation-timing-function: ease-in; }
+    34%   { left: 0; animation-timing-function: ease-out; }
+    51%   { left: 8px; animation-timing-function: ease-in; }
+    68%   { left: 0px; }
+    85%   { left: 3px; animation-timing-function: ease-in; }
+    100%  { left: 0;}
+  }
+  @-webkit-keyframes bounce-left {
+    0%    { left: 0; animation-timing-function: ease-out; }
+    17%   { left: 15px; animation-timing-function: ease-in; }
+    34%   { left: 0; animation-timing-function: ease-out; }
+    51%   { left: 8px; animation-timing-function: ease-in; }
+    68%   { left: 0px; }
+    85%   { left: 3px; animation-timing-function: ease-in; }
+    100%  { left: 0;}
+  }
+  &:hover {
+    -webkit-animation: bounce-left  0.5s linear;
+    -moz-animation: bounce-left  0.5s linear;
+  }
+}
+
+a.bounce-4 {
+  color: $paper;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  @-moz-keyframes bounce-right  {
+    0%    { right: 0; animation-timing-function: ease-out; }
+    17%   { right: 15px; animation-timing-function: ease-in; }
+    34%   { right: 0; animation-timing-function: ease-out; }
+    51%   { right: 8px; animation-timing-function: ease-in; }
+    68%   { right: 0px; }
+    85%   { right: 3px; animation-timing-function: ease-in; }
+    100%  { right: 0;}
+  }
+  @-webkit-keyframes bounce-right {
+    0%    { right: 0; animation-timing-function: ease-out; }
+    17%   { right: 15px; animation-timing-function: ease-in; }
+    34%   { right: 0; animation-timing-function: ease-out; }
+    51%   { right: 8px; animation-timing-function: ease-in; }
+    68%   { right: 0px; }
+    85%   { right: 3px; animation-timing-function: ease-in; }
+    100%  { right: 0;}
+  }
+  &:hover {
+    -webkit-animation: bounce-right  0.5s linear;
+    -moz-animation: bounce-right  0.5s linear;
+  }
+}
