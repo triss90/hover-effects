@@ -41,18 +41,43 @@ a.scale-3 {
     line-height: 1.6;
     position: relative;
     overflow: hidden;
-    @-moz-keyframes scale {
+    @-moz-keyframes scale-1 {
         0% { -webkit-transform: scale(1); -moz-transform: scale(1); }
         20% { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); }
         60% { -webkit-transform: scale(1); -moz-transform: scale(1); }
     }
-    @-webkit-keyframes scale {
+    @-webkit-keyframes scale-1 {
         0% { -webkit-transform: scale(1); -moz-transform: scale(1); }
         20% { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); }
         60% { -webkit-transform: scale(1); -moz-transform: scale(1); }
     }
     &:hover {
-        -webkit-animation: scale 0.5s linear;
-        -moz-animation: scale 0.5s linear;
+        -webkit-animation: scale-1 0.5s linear;
+        -moz-animation: scale-1 0.5s linear;
+    }
+}
+
+a.scale-4 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    @-moz-keyframes scale-2 {
+        0% { -webkit-transform: scale(1); -moz-transform: scale(1); }
+        20% { -webkit-transform: scale(0.9); -moz-transform: scale(0.9); }
+        60% { -webkit-transform: scale(1); -moz-transform: scale(1); }
+    }
+    @-webkit-keyframes scale-2 {
+        0% { -webkit-transform: scale(1); -moz-transform: scale(1); }
+        20% { -webkit-transform: scale(0.9); -moz-transform: scale(0.9); }
+        60% { -webkit-transform: scale(1); -moz-transform: scale(1); }
+    }
+    &:hover {
+        -webkit-animation: scale-2 0.5s linear;
+        -moz-animation: scale-2 0.5s linear;
     }
 }
