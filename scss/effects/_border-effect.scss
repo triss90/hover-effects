@@ -1,0 +1,16 @@
+a.border-1 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    border: 2px solid transparent;
+    &:hover {
+        border: 2px solid $paper;
+        transition: 0.3s ease-out;
+    }
+}

@@ -1,0 +1,67 @@
+a.hover-1 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    bottom: 0px;
+    transition: 0.3s ease-out;
+    &:hover {
+        bottom: 10px;
+        transition: 0.3s ease-out;
+    }
+}
+
+a.hover-2 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    transition: 0.3s ease-out;
+    &:hover {
+        top: 10px;
+        transition: 0.3s ease-out;
+    }
+}
+
+a.hover-3 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    left: 0px;
+    transition: 0.3s ease-out;
+    &:hover {
+        left: 10px;
+        transition: 0.3s ease-out;
+    }
+}
+
+a.hover-4 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    right: 0px;
+    transition: 0.3s ease-out;
+    &:hover {
+        right: 10px;
+        transition: 0.3s ease-out;
+    }
+}
