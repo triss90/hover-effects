@@ -9,7 +9,8 @@ a.rotate-1 {
     overflow: hidden;
     transition: 0.3s ease-out;
     &:hover {
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
         transition: 0.3s ease-out;
     }
 }
@@ -25,7 +26,8 @@ a.rotate-2 {
     overflow: hidden;
     transition: 0.3s ease-out;
     &:hover {
-        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
         transition: 0.3s ease-out;
     }
 }
