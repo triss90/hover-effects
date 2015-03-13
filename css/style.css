@@ -112,8 +112,24 @@ a.flip-1 {
   overflow: hidden;
   padding: 5px; }
   a.flip-1:hover {
-    color: #27ae60;
-    background: #efefef; }
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    transition: 0.3s ease-out; }
+
+a.flip-2 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  padding: 5px; }
+  a.flip-2:hover {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+    transition: 0.3s ease-out; }
 
 /* ########### Rotate effect ########### */
 a.rotate-1 {
