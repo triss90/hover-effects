@@ -13,6 +13,23 @@ h1, h2, h3, p {
   color: #ecf0f1;
   text-shadow: 2px 2px #1a7d47; }
 
+.header {
+  height: 150px;
+  width: 100%;
+  background: #ff9800;
+  border-bottom: 1px solid #e67e22;
+  box-shadow: 0px 3px 5px #1a7d47; }
+  .header .inner {
+    max-width: 900px;
+    height: 100%;
+    padding-top: 15px;
+    margin: 0 auto;
+    color: #ecf0f1;
+    text-align: center; }
+    .header .inner h1 {
+      font-size: 240%;
+      text-shadow: 2px 2px #e67e22; }
+
 .center-text {
   text-align: center; }
 
@@ -589,7 +606,46 @@ a.border-1 {
   position: relative;
   overflow: hidden;
   transition: 0.3s ease-out;
-  border: 2px solid transparent; }
+  border: 2px solid transparent;
+  padding: 0px 5px 0px; }
   a.border-1:hover {
     border: 2px solid #efefef;
+    transition: 0.3s ease-out; }
+
+a.border-2 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  padding: 0px 1px 0px; }
+  a.border-2:hover {
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    padding: 0px 10px 0px;
+    transition: 0.3s ease-out; }
+
+a.border-3 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  padding: 0px 10px 0px; }
+  a.border-3:hover {
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #efefef;
+    padding: 0px 1px 0px;
     transition: 0.3s ease-out; }

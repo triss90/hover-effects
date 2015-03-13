@@ -21,6 +21,26 @@ h1,h2,h3,p {
     text-shadow: 2px 2px $greenDark;
 }
 
+.header {
+    height: 150px;
+    width: 100%;
+    background: $orange;
+    border-bottom: 1px solid $carrot;
+    box-shadow: 0px 3px 5px $greenDark;
+    .inner {
+        max-width: 900px;
+        height: 100%;
+        padding-top: 15px;
+        margin: 0 auto;
+        color: $clouds;
+        text-align: center;
+        h1 {
+            font-size: 240%;
+            text-shadow: 2px 2px $carrot; 
+        }
+    }
+}
+
 .center-text {
     text-align: center;
 }

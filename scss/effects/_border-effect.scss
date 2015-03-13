@@ -9,8 +9,51 @@ a.border-1 {
     overflow: hidden;
     transition: 0.3s ease-out;
     border: 2px solid transparent;
+    padding: 0px 5px 0px;
     &:hover {
         border: 2px solid $paper;
+        transition: 0.3s ease-out;
+    }
+}
+
+a.border-2 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    padding: 0px 1px 0px;
+    &:hover {
+        border-left: 2px solid $paper;
+        border-right: 2px solid $paper;
+        padding: 0px 10px 0px;
+        transition: 0.3s ease-out;
+    }
+}
+
+a.border-3 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    padding: 0px 10px 0px;
+    &:hover {
+        border-left: 2px solid $paper;
+        border-right: 2px solid $paper;
+        padding: 0px 1px 0px;
         transition: 0.3s ease-out;
     }
 }
