@@ -1,0 +1,15 @@
+a.space-1 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+    &:hover {
+        letter-spacing:3px;
+        transition: 0.2s ease-out;
+    }
+}

@@ -7,13 +7,10 @@ a.rotate-1 {
     line-height: 1.6;
     position: relative;
     overflow: hidden;
-    padding: 5px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+    transition: 0.3s ease-out;
     &:hover {
         transform: rotate(360deg);
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
+        transition: 0.3s ease-out;
     }
 }
 
@@ -26,12 +23,9 @@ a.rotate-2 {
     line-height: 1.6;
     position: relative;
     overflow: hidden;
-    padding: 5px;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+    transition: 0.3s ease-out;
     &:hover {
         transform: rotate(-360deg);
-        transition-duration: 0.3s;
-        transition-timing-function: ease-out;
+        transition: 0.3s ease-out;
     }
 }

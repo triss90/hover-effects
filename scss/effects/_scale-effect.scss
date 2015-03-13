@@ -7,13 +7,10 @@ a.scale-1 {
     line-height: 1.6;
     position: relative;
     overflow: hidden;
-    padding: 5px;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;
+    transition: 0.1s ease-out;
     &:hover {
         transform: scale(1.1);
-        transition-duration: 0.1s;
-        transition-timing-function: ease-out;
+        transition: 0.1s ease-out;
     }
 }
 
@@ -26,16 +23,12 @@ a.scale-2 {
     line-height: 1.6;
     position: relative;
     overflow: hidden;
-    padding: 5px;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;
+    transition: 0.1s ease-out;
     &:hover {
         transform: scale(0.9);
-        transition-duration: 0.1s;
-        transition-timing-function: ease-out;
+        transition: 0.1s ease-out;
     }
 }
-
 a.scale-3 {
     color: $paper;
     text-decoration: none;
@@ -45,12 +38,18 @@ a.scale-3 {
     line-height: 1.6;
     position: relative;
     overflow: hidden;
-    padding: 5px;
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out;
+    @-moz-keyframes scale {
+        0% { transform: scale(1); }
+        20% { transform: scale(1.1); }
+        60% { transform: scale(1); }
+    }
+    @-webkit-keyframes scale {
+        0% { transform: scale(1); }
+        20% { transform: scale(1.1); }
+        60% { transform: scale(1); }
+    }
     &:hover {
-        transform: scale(0.9);
-        transition-duration: 0.1s;
-        transition-timing-function: ease-out;
+        -webkit-animation: scale 0.5s linear;
+        -moz-animation: scale 0.5s linear;
     }
 }

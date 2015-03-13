@@ -37,9 +37,7 @@ a.line-1 {
     top: 0;
     background: #efefef;
     height: 2px;
-    transition-property: right;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out; }
+    transition: 0.3s ease-out; }
   a.line-1:after {
     content: "";
     position: absolute;
@@ -49,9 +47,7 @@ a.line-1 {
     bottom: 0;
     background: #efefef;
     height: 2px;
-    transition-property: left;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out; }
+    transition: 0.3s ease-out; }
   a.line-1:hover:before, a.line-1:focus:before, a.line-1:active:before {
     right: 0; }
   a.line-1:hover:after, a.line-1:focus:after, a.line-1:active:after {
@@ -76,9 +72,7 @@ a.line-2 {
     top: 0;
     background: #efefef;
     height: 2px;
-    transition-property: right;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out; }
+    transition: 0.3s ease-out; }
   a.line-2:hover:before, a.line-2:focus:before, a.line-2:active:before {
     right: 0; }
 
@@ -102,9 +96,7 @@ a.line-3 {
     bottom: 0;
     background: #efefef;
     height: 2px;
-    transition-property: left;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out; }
+    transition: 0.3s ease-out; }
   a.line-3:hover:after, a.line-3:focus:after, a.line-3:active:after {
     left: 0; }
 
@@ -133,13 +125,10 @@ a.rotate-1 {
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-  padding: 5px;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out; }
+  transition: 0.3s ease-out; }
   a.rotate-1:hover {
     transform: rotate(360deg);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out; }
+    transition: 0.3s ease-out; }
 
 a.rotate-2 {
   color: #efefef;
@@ -150,13 +139,10 @@ a.rotate-2 {
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-  padding: 5px;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out; }
+  transition: 0.3s ease-out; }
   a.rotate-2:hover {
     transform: rotate(-360deg);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out; }
+    transition: 0.3s ease-out; }
 
 /* ########### Scale effect ########### */
 a.scale-1 {
@@ -168,13 +154,10 @@ a.scale-1 {
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-  padding: 5px;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-out; }
+  transition: 0.1s ease-out; }
   a.scale-1:hover {
     transform: scale(1.1);
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out; }
+    transition: 0.1s ease-out; }
 
 a.scale-2 {
   color: #efefef;
@@ -185,13 +168,10 @@ a.scale-2 {
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-  padding: 5px;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-out; }
+  transition: 0.1s ease-out; }
   a.scale-2:hover {
     transform: scale(0.9);
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out; }
+    transition: 0.1s ease-out; }
 
 a.scale-3 {
   color: #efefef;
@@ -201,11 +181,143 @@ a.scale-3 {
   vertical-align: middle;
   line-height: 1.6;
   position: relative;
-  overflow: hidden;
-  padding: 5px;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-out; }
+  overflow: hidden; }
+@-moz-keyframes scale {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.1); }
+  60% {
+    transform: scale(1); } }
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.1); }
+  60% {
+    transform: scale(1); } }
   a.scale-3:hover {
-    transform: scale(0.9);
-    transition-duration: 0.1s;
-    transition-timing-function: ease-out; }
+    -webkit-animation: scale 0.5s linear;
+    -moz-animation: scale 0.5s linear; }
+
+/* ########### Space effect ########### */
+a.space-1 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s ease-out; }
+  a.space-1:hover {
+    letter-spacing: 3px;
+    transition: 0.2s ease-out; }
+
+/* ########### Bounce effect ########### */
+a.bounce-1 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden; }
+@-moz-keyframes bounce-up {
+  0% {
+    bottom: 0;
+    animation-timing-function: ease-out; }
+  17% {
+    bottom: 15px;
+    animation-timing-function: ease-in; }
+  34% {
+    bottom: 0;
+    animation-timing-function: ease-out; }
+  51% {
+    bottom: 8px;
+    animation-timing-function: ease-in; }
+  68% {
+    bottom: 0px; }
+  85% {
+    bottom: 3px;
+    animation-timing-function: ease-in; }
+  100% {
+    bottom: 0; } }
+@-webkit-keyframes bounce-up {
+  0% {
+    bottom: 0;
+    animation-timing-function: ease-out; }
+  17% {
+    bottom: 15px;
+    animation-timing-function: ease-in; }
+  34% {
+    bottom: 0;
+    animation-timing-function: ease-out; }
+  51% {
+    bottom: 8px;
+    animation-timing-function: ease-in; }
+  68% {
+    bottom: 0px; }
+  85% {
+    bottom: 3px;
+    animation-timing-function: ease-in; }
+  100% {
+    bottom: 0; } }
+  a.bounce-1:hover {
+    -webkit-animation: bounce-up  0.5s linear;
+    -moz-animation: bounce-up  0.5s linear; }
+
+a.bounce-2 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden; }
+@-moz-keyframes bounce-dowm {
+  0% {
+    top: 0;
+    animation-timing-function: ease-out; }
+  17% {
+    top: 15px;
+    animation-timing-function: ease-in; }
+  34% {
+    top: 0;
+    animation-timing-function: ease-out; }
+  51% {
+    top: 8px;
+    animation-timing-function: ease-in; }
+  68% {
+    top: 0px; }
+  85% {
+    top: 3px;
+    animation-timing-function: ease-in; }
+  100% {
+    top: 0; } }
+@-webkit-keyframes bounce-dowm {
+  0% {
+    top: 0;
+    animation-timing-function: ease-out; }
+  17% {
+    top: 15px;
+    animation-timing-function: ease-in; }
+  34% {
+    top: 0;
+    animation-timing-function: ease-out; }
+  51% {
+    top: 8px;
+    animation-timing-function: ease-in; }
+  68% {
+    top: 0px; }
+  85% {
+    top: 3px;
+    animation-timing-function: ease-in; }
+  100% {
+    top: 0; } }
+  a.bounce-2:hover {
+    -webkit-animation: bounce-dowm  0.5s linear;
+    -moz-animation: bounce-dowm  0.5s linear; }
