@@ -1,26 +1,25 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
-  background: #ffc107;
-}
+  background: #27ae60; }
 
 h1, h2, h3, p {
-  color: #e67e22;
-}
+  color: #ecf0f1;
+  text-shadow: 2px 2px #1a7d47; }
 
 .center-text {
-  text-align: center;
-}
+  text-align: center; }
 
-a.line {
-  color: #795548;
+/* ########### Line effect ###########*/
+/* Line 1 */
+a.line-1 {
+  color: #efefef;
   text-decoration: none;
   font-size: 120%;
   display: inline-block;
@@ -28,44 +27,64 @@ a.line {
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-  border-top: 2px solid none;
-  border-bottom: 2px solid none;
-}
-a.line:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 100%;
-  top: 0;
-  background: #795548;
-  height: 2px;
-  transition-property: right;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-a.line:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 100%;
-  right: 0;
-  bottom: 0;
-  background: #795548;
-  height: 2px;
-  transition-property: left;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-a.line:hover:before, a.line:focus:before, a.line:active:before {
-  right: 0;
-}
-a.line:hover:after, a.line:focus:after, a.line:active:after {
-  left: 0;
-}
+  padding-bottom: 2px; }
+  a.line-1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    top: 0;
+    background: #efefef;
+    height: 2px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; }
+  a.line-1:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #efefef;
+    height: 2px;
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; }
+  a.line-1:hover:before, a.line-1:focus:before, a.line-1:active:before {
+    right: 0; }
+  a.line-1:hover:after, a.line-1:focus:after, a.line-1:active:after {
+    left: 0; }
 
-a.flip {
-  color: #795548;
+/* Line 2 */
+a.line-2 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden; }
+  a.line-2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    top: 0;
+    background: #efefef;
+    height: 2px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; }
+  a.line-2:hover:before, a.line-2:focus:before, a.line-2:active:before {
+    right: 0; }
+
+/* Line 3 */
+a.line-3 {
+  color: #efefef;
   text-decoration: none;
   font-size: 120%;
   display: inline-block;
@@ -73,22 +92,120 @@ a.flip {
   line-height: 1.6;
   position: relative;
   overflow: hidden;
-  border-top: 2px solid none;
-  border-bottom: 2px solid none;
-}
-a.flip:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 100%;
-  right: 0;
-  bottom: 0;
-  background: #ecf0f1;
-  height: 100%;
-  transition-property: left;
+  padding-bottom: 2px; }
+  a.line-3:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #efefef;
+    height: 2px;
+    transition-property: left;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; }
+  a.line-3:hover:after, a.line-3:focus:after, a.line-3:active:after {
+    left: 0; }
+
+/* ########### Flip effect ########### */
+a.flip-1 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  padding: 5px; }
+  a.flip-1:hover {
+    color: #27ae60;
+    background: #efefef; }
+
+/* ########### Rotate effect ########### */
+a.rotate-1 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
   transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-a.flip:hover:after, a.flip:focus:after, a.flip:active:after {
-  left: 0;
-}
+  transition-timing-function: ease-out; }
+  a.rotate-1:hover {
+    transform: rotate(360deg);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; }
+
+a.rotate-2 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out; }
+  a.rotate-2:hover {
+    transform: rotate(-360deg);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out; }
+
+/* ########### Scale effect ########### */
+a.scale-1 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out; }
+  a.scale-1:hover {
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out; }
+
+a.scale-2 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out; }
+  a.scale-2:hover {
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out; }
+
+a.scale-3 {
+  color: #efefef;
+  text-decoration: none;
+  font-size: 120%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.6;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out; }
+  a.scale-3:hover {
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out; }

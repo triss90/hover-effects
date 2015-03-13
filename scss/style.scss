@@ -13,19 +13,26 @@ body {
     line-height: 1.6; 
     font-weight: 400; 
     font-family: 'Open Sans', sans-serif; 
-    background: $amber;
+    background: $nephritis;
 }
 
 h1,h2,h3,p {
-    color: $carrot;
+    color: $clouds;
+    text-shadow: 2px 2px $greenDark;
 }
 
 .center-text {
     text-align: center;
 }
 
-// Line effect
+/* ########### Line effect ###########*/
 @import 'effects/line-effect';
 
-// flip effect
+/* ########### Flip effect ########### */
 @import 'effects/flip-effect';
+
+/* ########### Rotate effect ########### */
+@import 'effects/rotate-effect';
+
+/* ########### Scale effect ########### */
+@import 'effects/scale-effect';
