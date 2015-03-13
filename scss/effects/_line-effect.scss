@@ -1,0 +1,44 @@
+a.line {
+    color: $brown;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid none;
+    border-bottom: 2px solid none; 
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        top: 0;
+        background: $brown;
+        height: 2px;
+        transition-property: right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 100%;
+        right: 0;
+        bottom: 0;
+        background: $brown;
+        height: 2px;
+        transition-property: left;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+    &:hover:before, &:focus:before, &:active:before {
+        right: 0;
+    }
+    &:hover:after, &:focus:after, &:active:after {
+        left: 0;
+    }
+}
