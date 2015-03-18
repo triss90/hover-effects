@@ -1,3 +1,3 @@
 # hover-effects
-A compilation of css hover effects
-Preview the hover effects at: hover.tomjw.dk
+A compilation of css hover effects. <br>
+Preview the hover effects at: http://hover.tomjw.dk/
