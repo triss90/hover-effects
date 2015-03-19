@@ -13,3 +13,69 @@ a.space-1 {
         transition: 0.2s ease-out;
     }
 }
+
+a.space-2 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    transition: 0.2s ease-out;
+    &:hover {
+        letter-spacing: -1px;
+        transition: 0.2s ease-out;
+    }
+}
+
+a.space-3 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    @-moz-keyframes space-1 {
+        0% { letter-spacing: 0; }
+        20% { letter-spacing: 3px; }
+        60% { letter-spacing: 0; }
+    }
+    @-webkit-keyframes space-1 {
+        0% { letter-spacing: 0; }
+        20% { letter-spacing: 3px; }
+        60% { letter-spacing: 0; }
+    }
+    &:hover {
+        -webkit-animation: space-1 0.5s linear;
+        -moz-animation: space-1 0.5s linear;
+    }
+}
+
+a.space-4 {
+    color: $paper;
+    text-decoration: none;
+    font-size: 120%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+    @-moz-keyframes space-2 {
+        0% { letter-spacing: 0; }
+        20% { letter-spacing: -1px; }
+        60% { letter-spacing: 0; }
+    }
+    @-webkit-keyframes space-2 {
+        0% { letter-spacing: 0; }
+        20% { letter-spacing: -1px; }
+        60% { letter-spacing: 0; }
+    }
+    &:hover {
+        -webkit-animation: space-2 0.5s linear;
+        -moz-animation: space-2 0.5s linear;
+    }
+}
